@@ -9,10 +9,12 @@ const Search = () => {
   const [city, setCity] = useState("");
   const [weatherData, setWeatherData] = useState(null);
 
+  const apiKey = process.env.REACT_APP_OPENWEATHER_API_KEY;
+
   const fetchData = async () => {
     try {
       const response = await axios.get(
-        
+        `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
       );
       setWeatherData(response.data);
       console.log(response.data);
