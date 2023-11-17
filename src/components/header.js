@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Search from "./search";
 
-const Header = ({}) => {
+const Header = () => {
   return (
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container>

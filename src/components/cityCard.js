@@ -11,8 +11,19 @@ const CityCard = () => {
             Current Weather
           </Card.Subtitle>
           <Card.Text>
-            Some quick example text to build on the card title and make up the
-            bulk of the card's content.
+            {/* {weatherData ? (
+              <>
+                <h2>{weatherData.name}</h2>
+                <p>Temperature: {weatherData.main.temp}°C</p>
+                <p>Description: {weatherData.weather[0].description}</p>
+                <p>Feels like : {weatherData.main.feels_like}°C</p>
+                <p>Humidity : {weatherData.main.humidity}%</p>
+                <p>Pressure : {weatherData.main.pressure}</p>
+                <p>Wind Speed : {weatherData.wind.speed}m/s</p>
+              </>
+            ) : (
+              <p>Loading weather data...</p>
+            )} */}
           </Card.Text>
         </Card.Body>
       </Card>
